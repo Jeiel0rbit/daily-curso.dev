@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diário do Curso.Dev</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -211,6 +212,21 @@
 </head>
 <body>
     <div class="container">
+      <div class="notification is-link">
+  <button class="delete"></button>
+  <strong>Lembrete</strong>: Página será atualizado constantemente conforme meu aprendizado. Ao finalizar o curso, página terá comentários de cada dia seguido pela sugestão de <a href="https://www.tabnews.com.br/rafael/diario-do-curso-dev" target="_blank" rel="noopener noreferrer">Rafael</a> e <a href="https://www.tabnews.com.br/wescld/1be6c9c0-c69f-4800-b127-2b68358c5a79" target="_blank" rel="noopener noreferrer">Wescld</a>.<br>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+  (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+    const $notification = $delete.parentNode;
+
+    $delete.addEventListener('click', () => {
+      $notification.parentNode.removeChild($notification);
+    });
+  });
+});
+    </script>
         <h1 class="heading-main">Diário do Curso.Dev</h1>
         
         <div class="timeline">
