@@ -1,0 +1,10 @@
+{
+    "html": {
+        "indent_size": 2,
+        "indent_with_tabs": false,
+        "max_preserve_newlines": 1,
+        "preserve_newlines": true,
+        "wrap_line_length": 120,
+        "end_with_newline": true
+    }
+}
